@@ -572,6 +572,14 @@ form textarea {
   }
 }
 
+@media (max-width: 530px) {
+  .stack-icons img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+  }
+}
+
 @media (max-width: 460px) {
   :root {
     --big-font: 3rem;
@@ -593,10 +601,8 @@ form textarea {
     height: 95vh;
   }
 
-  .stack-icons img {
-    width: 100px;
-    height: 100px;
-    margin: 15px;
+  .last-text p {
+    max-width: 250px;
   }
 }
 
@@ -629,5 +635,9 @@ form textarea {
 
   .portfolio-content {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+
+  .last-text p {
+    max-width: 180px;
   }
 }
