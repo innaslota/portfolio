@@ -17,3 +17,15 @@ window.onscroll = () => {
   menu.classList.remove("bx-x");
   navlist.classList.remove("open");
 };
+
+//replace active class in navbar
+const navlink = document.querySelectorAll(".navlink");
+for (var i = 0; i < navlink.length; i++) {
+  navlink[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace("active", "");
+    }
+    this.className += " active";
+  });
+}
