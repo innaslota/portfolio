@@ -476,3 +476,158 @@ form textarea {
   color: var(--text-color);
   background: var(--main-color);
 }
+
+/*Responsive*/
+
+@media (max-width: 1480px) {
+  header {
+    padding: 12px 2.5%;
+    transition: 0.1s;
+  }
+
+  header.sticky {
+    padding: 10px 2.5%;
+    transition: 0.1s;
+  }
+
+  section {
+    padding: 110px 3% 60px;
+  }
+
+  .end {
+    padding: 15px 3%;
+  }
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --big-font: 4rem;
+    --h2-font: 2.5rem;
+    --p-font: 1rem;
+    transition: 0.1s;
+  }
+
+  .home-text h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    margin: 0 auto;
+    order: 2;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navlist {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    transition: all 0.45s ease;
+  }
+
+  .navlist a {
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    color: var(--second-color);
+    transition: all 0.45s ease;
+  }
+
+  .navlist a:hover {
+    color: var(--main-color);
+  }
+
+  .navlist a.active {
+  }
+
+  .navlist.open {
+    top: 100%;
+  }
+
+  .home-text p {
+    width: 360px;
+  }
+}
+
+@media (max-width: 460px) {
+  :root {
+    --big-font: 3rem;
+    --h2-font: 2rem;
+    --p-font: 0.8rem;
+    transition: 0.1s;
+  }
+
+  .home-text h3 {
+    font-size: 2rem;
+  }
+
+  .home-text p {
+    width: 100%;
+    color: var(--text-color);
+  }
+
+  .home {
+    height: 95vh;
+  }
+
+  .stack-icons img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .slide {
+    margin-top: 100px;
+  }
+
+  .btn,
+  .btn2 {
+    padding: 8px 19px;
+    font-size: 0.7rem;
+  }
+
+  .btn2 i {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+
+  .stack-icons img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+
+  .home {
+    height: 110vh;
+  }
+
+  .portfolio-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+}
