@@ -574,8 +574,8 @@ form textarea {
 
 @media (max-width: 530px) {
   .stack-icons img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin: 15px;
   }
 }
