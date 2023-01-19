@@ -14,6 +14,7 @@
   --text-color: #fff;
   --second-color: rgb(97, 97, 97);
   --main-color: #2ecef2;
+  --third-color: #65e5a9;
   --big-font: 5rem;
   --h2-font: 3rem;
   --p-font: 1.1rem;
@@ -220,12 +221,14 @@ section {
   border-radius: 8px;
 }
 
-.about-text h2 {
+.about-text h2,
+.heading h2 {
   font-size: var(--h2-font);
   line-height: 1;
 }
 
-.about-text h4 {
+.about-text h4,
+.heading h4 {
   font-size: 24px;
   font-weight: 600;
   color: var(--text-color);
@@ -233,7 +236,8 @@ section {
   margin: 15px 0 30px;
 }
 
-.about-text p {
+.about-text p,
+.about-content p {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 1.8;
@@ -639,5 +643,115 @@ form textarea {
 
   .last-text p {
     max-width: 180px;
+  }
+}
+
+/*About me page*/
+
+.about-section,
+.achievements {
+  background: var(--second-bg-color);
+}
+
+.heading {
+  text-align: center;
+}
+
+.about-content .btn {
+  border: 0px;
+}
+
+.qualifications-content i,
+.qualifications-content .qualification_button {
+  color: var(--third-color);
+}
+
+.qualification-section-content {
+  color: var(--second-color);
+}
+
+.qualifications-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.qualification_button {
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.qualification_button:hover {
+  color: var(--main-color);
+}
+
+.qualification-icon {
+  font-size: 1.8rem;
+  margin-right: 5px;
+}
+
+.qualification-data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification-data-tab {
+  text-align: right;
+}
+
+.qualification-title {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.qualification-subtitle {
+  font-size: 0.95em;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.qualification_calendar {
+  font-size: 0.7em;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.qualification-rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
+.qualification-line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--main-color);
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+  display: none;
+}
+
+.qualification-active[data-content] {
+  display: block;
+}
+
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+@media (max-width: 250px) {
+  .certificates {
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
   }
 }

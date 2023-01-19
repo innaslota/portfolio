@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--header design-->
+    <header>
+      <a href="#" class="logo"><span>I</span>nna<span> S</span>lota.</a>
+
+      <ul class="navlist">
+        <li>
+          <a href="index.html" class="active navlink">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="navlink">About Me</a>
+        </li>
+        <li>
+          <a href="#techstack" class="navlink">Tech Stack</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="navlink">My Projects</a>
+        </li>
+        <li>
+          <a href="#contact" class="navlink">Contact Me</a>
+        </li>
+      </ul>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="about-section">
+      <div class="heading about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>My introdution</h4>
+      </div>
+
+      <div class="about">
+        <div class="about-image">
+          <img src="images/my_photo2.jpg" class="about-img" alt="" />
+        </div>
+
+        <div class="about-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <button class="btn">
+            Download CV <i class="bx bx-download"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="qualification">
+      <div class="heading">
+        <h2>Qualification</h2>
+        <h4>My personal journey</h4>
+      </div>
+
+      <div class="qualification-container">
+        <div class="qualifications-content">
+          <div
+            class="qualification_button qualification-active"
+            data-target="#education"
+          >
+            <i class="bx bxs-graduation qualification-icon"></i>
+            Education
+          </div>
+          <div class="qualification_button" data-target="#work">
+            <i class="bx bx-briefcase qualification-icon"></i>
+            Work
+          </div>
+        </div>
+
+        <div class="qualification-sections">
+          <!--Education-->
+          <div
+            class="qualification-section-content qualification-active"
+            data-content
+            id="education"
+          >
+            <!--Qualification 1-->
+            <div class="qualification-data">
+              <div class="qualification-data-tab">
+                <h3 class="qualification-title">Vietnamese Studies</h3>
+                <p class="qualification-subtitle">
+                  Taras Shevchenko National University of Kyiv
+                </p>
+                <div class="qualification_calendar">
+                  <i class="bx bx-calendar"></i>
+                  2014-2018
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification-rounder"></span>
+                <span class="qualification-line"></span>
+              </div>
+            </div>
+            <!--Qualification 2-->
+            <div class="qualification-data">
+              <div></div>
+
+              <div>
+                <span class="qualification-rounder"></span>
+                <span class="qualification-line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification-title">Vietnamese Language</h3>
+                <p class="qualification-subtitle">
+                  VNU University of Social Sciences and Humanities
+                </p>
+                <div class="qualification_calendar">
+                  <i class="bx bx-calendar"></i>
+                  2017
+                </div>
+              </div>
+            </div>
+            <!--Qualification 3-->
+            <div class="qualification-data">
+              <div class="qualification-data-tab">
+                <h3 class="qualification-title">French Studies</h3>
+                <p class="qualification-subtitle">
+                  Taras Shevchenko National University of Kyiv
+                </p>
+                <div class="qualification_calendar">
+                  <i class="bx bx-calendar"></i>
+                  2018-2020
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification-rounder"></span>
+                <span class="qualification-line"></span>
+              </div>
+            </div>
+            <!--Qualification 4-->
+            <div class="qualification-data">
+              <div></div>
+
+              <div>
+                <span class="qualification-rounder"></span>
+                <!--<span class="qualification-line"></span>-->
+              </div>
+
+              <div>
+                <h3 class="qualification-title">French language</h3>
+                <p class="qualification-subtitle">
+                  Paul Valéry University Montpellier 3
+                </p>
+                <div class="qualification_calendar">
+                  <i class="bx bx-calendar"></i>
+                  2020
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Work-->
+          <div class="qualification-section-content" data-content id="work">
+            <!--Qualification 1-->
+            <div class="qualification-data">
+              <div class="qualification-data-tab">
+                <h3 class="qualification-title">Customer Support</h3>
+                <p class="qualification-subtitle">SupportYourApp</p>
+                <div class="qualification_calendar">
+                  <i class="bx bx-calendar"></i>
+                  2014-2018
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification-rounder"></span>
+                <span class="qualification-line"></span>
+              </div>
+            </div>
+            <!--Qualification 2-->
+            <div class="qualification-data">
+              <div></div>
+
+              <div>
+                <span class="qualification-rounder"></span>
+                <span class="qualification-line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification-title">Customer Care Agent</h3>
+                <p class="qualification-subtitle">Wix</p>
+                <div class="qualification_calendar">
+                  <i class="bx bx-calendar"></i>
+                  2014-2018
+                </div>
+              </div>
+            </div>
+            <!--Qualification 3-->
+            <div class="qualification-data">
+              <div class="qualification-data-tab">
+                <h3 class="qualification-title">Customer Care Agent</h3>
+                <p class="qualification-subtitle">Wix Answers</p>
+                <div class="qualification_calendar">
+                  <i class="bx bx-calendar"></i>
+                  2014-2018
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification-rounder"></span>
+                <!--<span class="qualification-line"></span>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements">
+      <div class="heading">
+        <h2><span>My</span> Achievements</h2>
+      </div>
+
+      <div class="certificates">
+        <div class="row">
+          <img src="images/Сочинение-на-тему-Природа.jpeg" alt="" />
+        </div>
+        <div class="row">
+          <img src="images/Сочинение-на-тему-Природа.jpeg" alt="" />
+        </div>
+        <div class="row">
+          <img src="images/Сочинение-на-тему-Природа.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--end section design-->
+    <section class="end">
+      <div class="last-text">
+        <p>Copyright © 2023 by Inna Slota. All rights reserved.</p>
+      </div>
+
+      <div class="top">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </section>
+
+    <!--custom JS link-->
+    <script src="app.js"></script>
+  </body>
+</html>
