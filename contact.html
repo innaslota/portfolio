@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
@@ -22,7 +22,7 @@
 
       <ul class="navlist">
         <li>
-          <a href="index.html#home" class="active navlink">Home</a>
+          <a href="index.html#home" class="navlink">Home</a>
         </li>
         <li>
           <a href="index.html#about" class="navlink">About Me</a>
@@ -34,8 +34,9 @@
           <a href="index.html#portfolio" class="navlink">My Projects</a>
         </li>
         <li>
-          <a href="index.html#contact" class="navlink">Contact Me</a>
+          <a href="index.html#contact" class="active navlink">Contact Me</a>
         </li>
+        <li><i class="bx bx-moon moon-icon"></i></li>
       </ul>
 
       <div class="bx bx-menu" id="menu-icon"></div>
@@ -49,28 +50,48 @@
         <p>Lorem Ipsum</p>
         <div class="list">
           <li><a href="#">+380661911118</a></li>
-          <li><a href="#">innaslota8@gmail.com</a></li>
+          <li>
+            <a href="mailto:innaslota8@gmail.com">innaslota8@gmail.com</a>
+          </li>
           <li><a href="#">Like Share & Subscribe</a></li>
         </div>
 
         <div class="contact-icons-cp">
-          <a href=""><i class="bx bxl-facebook-circle"></i></a>
-          <a href=""><i class="bx bxl-instagram-alt"></i></a>
-          <a href=""><i class="bx bxl-linkedin-square"></i></a>
+          <a href="https://www.facebook.com/inna.slota" target="_blank"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/inna-slota-546900160/"
+            target="_blank"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://github.com/innaslota" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
       </div>
 
       <div class="contact-form">
-        <form action="">
-          <input type="name" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email Address" required />
-          <input type="" placeholder="Your Mobile Number" required />
+        <form action="https://formsubmit.co/innaslota8@gmail.com" method="POST">
+          <input type="name" name="name" placeholder="Your Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email Address"
+            required
+          />
+          <input
+            type=""
+            name="phone_nember"
+            placeholder="Your Mobile Number"
+            required
+          />
           <textarea
-            name=""
+            name="message"
             id=""
             cols="35"
             rows="10"
-            placeholder="How Can I Help You"
+            placeholder="How Can I Help You?"
             required
           ></textarea>
           <input type="submit" value="Send Message" class="submit" required />
@@ -85,7 +106,7 @@
       </div>
 
       <div class="top">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#contact"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </section>
 
