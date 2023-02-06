@@ -67,9 +67,9 @@ header.sticky {
   background: linear-gradient(
     180deg,
     rgba(249, 243, 224, 1) 0%,
-    rgba(46, 206, 242, 1) 280%
+    rgb(46, 195, 225) 180%
   );
-  border-bottom: 1px solid #b0e4f0;
+  border-bottom: 1px solid #84d1ea;
   padding: 12px 15%;
 }
 
@@ -124,14 +124,14 @@ span {
 
 /*design Home section*/
 section {
-  padding: 160px 15% 120px;
+  padding: 140px 15% 120px;
 }
 
 .home {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/bg5.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -188,6 +188,9 @@ section {
   line-height: 1.8;
   margin-bottom: 40px;
   width: 580px;
+  background-color: #393d3bb1;
+  border-radius: 4px;
+  padding: 15px;
 }
 
 .button {
@@ -418,8 +421,8 @@ section {
 
 .contact-image img {
   position: relative;
-  top: 26px;
-  height: 300px;
+  top: 11px;
+  height: 330px;
 }
 
 .contact-text {
@@ -709,7 +712,7 @@ section {
 }
 
 .qualification_button:hover {
-  color: var(--main-color);
+  transform: scale(1.1);
 }
 
 .qualification-icon {

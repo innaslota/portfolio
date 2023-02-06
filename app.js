@@ -1,3 +1,9 @@
+//sticky header
+const header = document.querySelector("header");
+window.addEventListener("scroll", function () {
+  header.classList.toggle("sticky", window.scrollY > 100);
+});
+
 //dark theme
 const chk = document.querySelector(".checkbox");
 
@@ -8,12 +14,6 @@ chk.addEventListener("change", () => {
   } else {
     localStorage.setItem("light", this.checked);
   }
-});
-
-//sticky header
-const header = document.querySelector("header");
-window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 100);
 });
 
 //responsive hamburger menu
@@ -43,25 +43,30 @@ for (var i = 0; i < navlink.length; i++) {
 }
 
 //add active class on scroll
-const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll(".navlink");
-window.onscroll = () => {
-  var current = "";
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id");
+const sectionsOnScroll = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  let scrollY = window.pageYOffset;
+
+  sectionsOnScroll.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".navlist a[href*=" + sectionId + "]")
+        .classList.add("active");
+    } else {
+      document
+        .querySelector(".navlist a[href*=" + sectionId + "]")
+        .classList.remove("active");
     }
   });
-
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    if (li.classList.contains(current)) {
-      li.classList.add("active");
-    }
-  });
-};
+}
 
 //show qualification data with buttons
 
