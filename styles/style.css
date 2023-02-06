@@ -789,7 +789,7 @@ section {
   }
 }
 
-/*My Projects me page*/
+/*My Projects page*/
 .project-row img {
   width: 100%;
   border-radius: 8px;
@@ -852,8 +852,8 @@ section {
 
 .swiper-pagination {
   right: 50% !important;
-  top: 92% !important;
-  transform: rotate(90deg) !important;
+  top: 80% !important;
+  transform: rotate(0deg) !important;
 }
 
 .swiper-button-prev,
