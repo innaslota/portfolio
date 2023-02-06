@@ -12,6 +12,7 @@
   --bg-color: #f9f3e0;
   --second-bg-color: #acf2d1;
   --text-color: #fff;
+  --text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
   --second-color: rgb(97, 97, 97);
   --main-color: #2ecef2;
   --third-color: #65e5a9;
@@ -23,6 +24,28 @@
 body {
   background: var(--bg-color);
   color: var(--text-color);
+}
+
+h2 {
+  text-shadow: var(--text-shadow);
+}
+
+.light {
+  --bg-color: #f9f3e0;
+  --second-bg-color: #acf2d1;
+  --text-color: #fff;
+  --second-color: rgb(97, 97, 97);
+  --main-color: #2ecef2;
+  --third-color: #65e5a9;
+}
+
+.dark {
+  --bg-color: #5b5b59;
+  --second-bg-color: #237d53;
+  --text-color: #fff;
+  --second-color: rgb(185, 183, 183);
+  --main-color: #086eda;
+  --third-color: #1fcf7d;
 }
 
 header {
@@ -52,6 +75,7 @@ header.sticky {
 
 .logo {
   color: var(--text-color);
+  text-shadow: var(--text-shadow);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -67,11 +91,15 @@ span {
 
 .navlist a {
   color: var(--text-color);
-  text-shadow: #304c67;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
   font-size: 17px;
   font-weight: 500;
-  margin: 0 25px;
+  margin: 0 20px;
   transition: all 0.45s ease;
+}
+
+.navlist .theme-toggle {
+  margin-left: 20px;
 }
 
 .navlist a:hover {
@@ -80,11 +108,14 @@ span {
 
 .navlist a.active {
   color: var(--main-color);
+  font-weight: 800;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 #menu-icon {
   font-size: 35px;
   color: var(--text-color);
+  text-shadow: var(--text-shadow);
   z-index: 10001;
   cursor: pointer;
   margin-left: 25px;
@@ -128,6 +159,7 @@ section {
 .two {
   display: inline-block;
   color: var(--text-color);
+  text-shadow: var(--text-shadow);
   font-size: 20px;
   font-weight: 500;
 }
@@ -136,12 +168,14 @@ section {
   font-size: var(--big-font);
   font-weight: 700;
   color: var(--text-color);
+  text-shadow: var(--text-shadow);
   line-height: 1.1;
   margin: 0 0 8px;
 }
 
 .home-text h3 {
   color: var(--text-color);
+  text-shadow: var(--text-shadow);
   margin: 0 0 35px;
   font-size: 3rem;
   font-weight: 700;
@@ -232,6 +266,7 @@ section {
   font-size: 24px;
   font-weight: 600;
   color: var(--text-color);
+  text-shadow: var(--text-shadow);
   line-height: 1.7;
   margin: 15px 0 30px;
 }
@@ -321,12 +356,13 @@ section {
 
 .layer h5 {
   font-size: 20px;
+  color: var(--third-color);
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .layer p {
-  color: var(--second-color);
+  color: var(--text-color);
   font-size: 1rem;
   line-height: 1.8;
 }
@@ -392,6 +428,7 @@ section {
 
 .contact-text h4 {
   color: var(--text-color);
+  text-shadow: var(--text-shadow);
   margin: 18px 0;
   font-size: 16px;
   font-weight: 600;
@@ -449,6 +486,7 @@ section {
   border-radius: 8px;
   font-size: 15px;
   color: var(--text-color);
+  text-shadow: var(--text-shadow);
   background: var(--main-color);
 }
 
@@ -487,7 +525,7 @@ section {
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 960px) {
   .about {
     grid-template-columns: 1fr;
   }
@@ -536,6 +574,12 @@ section {
 
   .navlist.open {
     top: 100%;
+    height: 400px;
+  }
+
+  .navlist .theme-toggle {
+    margin-left: 30px;
+    margin-top: 20px;
   }
 
   .home-text p {
@@ -963,4 +1007,50 @@ form textarea {
   .contact {
     grid-template-columns: 1fr;
   }
+}
+
+/* dark theme toggle*/
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: rgb(161, 224, 171);
+  border: 1px solid rgb(116, 216, 132);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.bx-moon {
+  color: #ffffff;
+}
+
+.bx-sun {
+  color: #ffffff;
 }

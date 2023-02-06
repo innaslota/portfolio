@@ -1,3 +1,15 @@
+//dark theme
+const chk = document.querySelector(".checkbox");
+
+chk.addEventListener("change", () => {
+  document.body.classList.toggle("dark");
+  if (this.checked) {
+    localStorage.setItem("dark", this.checked);
+  } else {
+    localStorage.setItem("light", this.checked);
+  }
+});
+
 //sticky header
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
@@ -30,6 +42,27 @@ for (var i = 0; i < navlink.length; i++) {
   });
 }
 
+//add active class on scroll
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".navlink");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
+
 //show qualification data with buttons
 
 const tabs = document.querySelectorAll("[data-target"),
@@ -54,7 +87,7 @@ tabs.forEach((tab) => {
 //project swiper
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  direction: "vertical",
+  direction: "horizontal",
   loop: true,
 
   // If we need pagination

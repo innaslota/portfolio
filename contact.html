@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact me via email, phone number or social network for collaboration"
+    />
     <title>Contact Me</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
@@ -18,25 +22,44 @@
   <body>
     <!--header design-->
     <header>
-      <a href="#" class="logo"><span>I</span>nna<span> S</span>lota.</a>
+      <a href="index.html" class="logo" title="Homepage"
+        ><span>I</span>nna<span> S</span>lota.</a
+      >
 
       <ul class="navlist">
         <li>
-          <a href="index.html#home" class="navlink">Home</a>
+          <a href="index.html#home" class="navlink" title="Home">Home</a>
         </li>
         <li>
-          <a href="index.html#about" class="navlink">About Me</a>
+          <a href="index.html#about" class="navlink" title="About Me"
+            >About Me</a
+          >
         </li>
         <li>
-          <a href="index.html#techstack" class="navlink">Tech Stack</a>
+          <a href="index.html#techstack" class="navlink" title="Tech Stack"
+            >Tech Stack</a
+          >
         </li>
         <li>
-          <a href="index.html#portfolio" class="navlink">My Projects</a>
+          <a href="index.html#portfolio" class="navlink" title="My Projects"
+            >My Projects</a
+          >
         </li>
         <li>
-          <a href="index.html#contact" class="active navlink">Contact Me</a>
+          <a href="index.html#contact" class="active navlink" title="Contact Me"
+            >Contact Me</a
+          >
         </li>
-        <li><i class="bx bx-moon moon-icon"></i></li>
+        <li class="theme-toggle">
+          <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="bx bx-sun" title="Light Theme"></i>
+              <i class="bx bx-moon" title="Dark Theme"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+        </li>
       </ul>
 
       <div class="bx bx-menu" id="menu-icon"></div>
@@ -46,27 +69,29 @@
     <section class="contact" id="contact">
       <div class="contact-text-cp">
         <h2>Contact <span>Me!</span></h2>
-        <h4>If You Have Any Project In Your Mind.</h4>
-        <p>Lorem Ipsum</p>
+        <h4>If You Have Any Project In Your Mind</h4>
+        <p>Reach out to me using any way convenient for you:</p>
         <div class="list">
-          <li><a href="#">+380661911118</a></li>
+          <li><a href="#" title="Phone number">+380661911118</a></li>
           <li>
-            <a href="mailto:innaslota8@gmail.com">innaslota8@gmail.com</a>
+            <a href="mailto:innaslota8@gmail.com" title="email address"
+              >innaslota8@gmail.com</a
+            >
           </li>
-          <li><a href="#">Like Share & Subscribe</a></li>
+          <li><a href="#" title="Social Links">Like Share & Subscribe</a></li>
         </div>
 
         <div class="contact-icons-cp">
           <a href="https://www.facebook.com/inna.slota" target="_blank"
-            ><i class="bx bxl-facebook-circle"></i
+            ><i class="bx bxl-facebook-circle" title="Facebook"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/inna-slota-546900160/"
             target="_blank"
-            ><i class="bx bxl-linkedin-square"></i
+            ><i class="bx bxl-linkedin-square" title="LinkedIn"></i
           ></a>
           <a href="https://github.com/innaslota" target="_blank"
-            ><i class="bx bxl-github"></i
+            ><i class="bx bxl-github" title="Github"></i
           ></a>
         </div>
       </div>
@@ -106,7 +131,7 @@
       </div>
 
       <div class="top">
-        <a href="#contact"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#contact"><i class="bx bx-up-arrow-alt" title="Go Up"></i></a>
       </div>
     </section>
 

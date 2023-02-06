@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Front-End Developer with entry-level experience specializing in web development, HTML, CSS and React"
+    />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
@@ -18,25 +22,38 @@
   <body>
     <!--header design-->
     <header>
-      <a href="#" class="logo"><span>I</span>nna<span> S</span>lota.</a>
+      <a href="index.html" class="logo" title="Homepage"
+        ><span>I</span>nna<span> S</span>lota.</a
+      >
 
       <ul class="navlist">
         <li>
-          <a href="#home" class="active navlink">Home</a>
+          <a href="#home" class="active navlink" title="Home">Home</a>
         </li>
         <li>
-          <a href="#about" class="navlink">About Me</a>
+          <a href="#about" class="navlink" title="About Me">About Me</a>
         </li>
         <li>
-          <a href="#techstack" class="navlink">Tech Stack</a>
+          <a href="#techstack" class="navlink" title="Tech Stack">Tech Stack</a>
         </li>
         <li>
-          <a href="#portfolio" class="navlink">My Projects</a>
+          <a href="#portfolio" class="navlink" title="My Projects"
+            >My Projects</a
+          >
         </li>
         <li>
-          <a href="#contact" class="navlink">Contact Me</a>
+          <a href="#contact" class="navlink" title="Contact Me">Contact Me</a>
         </li>
-        <li><i class="bx bx-moon moon-icon"></i></li>
+        <li class="theme-toggle">
+          <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="bx bx-sun" title="Ligth theme"></i>
+              <i class="bx bx-moon" title="Dark theme"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+        </li>
       </ul>
 
       <div class="bx bx-menu" id="menu-icon"></div>
@@ -59,8 +76,10 @@
           can check out my works below
         </p>
         <div class="button">
-          <a href="#" class="btn">Say Hello</a>
-          <a href="#" class="btn2"><i class="bx bx-play"></i> Watch My Work</a>
+          <a href="#contact" class="btn" title="Say Hello">Say Hello</a>
+          <a href="#portfolio" class="btn2"
+            ><i class="bx bx-play" title="Watch My Work"></i> Watch My Work</a
+          >
         </div>
       </div>
     </section>
@@ -75,15 +94,18 @@
         <h2>About <span>Me</span></h2>
         <h4>Creative Front-End developer</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          I have always liked Information Technology. So, just after graduation,
+          I found a job that matched my competencies in an IT company. I have
+          been constantly improving my skills and in 2021 I ended up at Wix
+          Answers team as an advanced Support Engineer. It was here that I
+          started learning HTML, CSS and Java Script. I really liked programming
+          and then I decided to develop in this direction. Therefore, in 2022, I
+          was studying on my own until I got into the SheCodes academy, where I
+          successfully completed 4 courses. Now I continue to study, develop my
+          skills, learn new programming techniques and I hope to find my first
+          job as a web developer in the nearest future.
         </p>
-        <a href="about.html" class="btn">More About</a>
+        <a href="about.html" class="btn" title="More About Me">More About</a>
       </div>
     </section>
 
@@ -116,44 +138,69 @@
 
       <div class="portfolio-content">
         <div class="row">
-          <img src="images/Сочинение-на-тему-Природа.jpeg" alt="" />
+          <img src="images/weather-app-prj.png" alt="Weather App" />
           <div class="layer">
-            <h5>Visual Design</h5>
-            <p>Lorem ipsum</p>
-            <a href="#"><i class="bx bx-link"></i></a>
+            <h5>Weather App</h5>
+            <p>
+              You can choose any existing city to find out the temperature, wind
+              speed, humidity, atmosphere pressure and 5 days forecast for it
+            </p>
+            <a
+              href="https://prismatic-ganache-6fa35b.netlify.app/"
+              target="_blank"
+              ><i class="bx bx-link" title="Weather App Link"></i
+            ></a>
           </div>
         </div>
 
         <div class="row">
-          <img src="images/Сочинение-на-тему-Природа.jpeg" alt="" />
+          <img src="images/cv-prj.png" alt="CV" />
           <div class="layer">
-            <h5>Visual Design</h5>
-            <p>Lorem ipsum</p>
-            <a href="#"><i class="bx bx-link"></i></a>
+            <h5>My Curriculum Vitae</h5>
+            <p>Landing page of my CV using HTML and CSS</p>
+            <a href="https://keen-bose-daaafc.netlify.app/" target="_blank"
+              ><i class="bx bx-link" title="CV Link"></i
+            ></a>
           </div>
         </div>
 
         <div class="row">
-          <img src="images/Сочинение-на-тему-Природа.jpeg" alt="" />
+          <img src="images/video-player-prj.png" alt="Video Player" />
           <div class="layer">
-            <h5>Visual Design</h5>
-            <p>Lorem ipsum</p>
-            <a href="#"><i class="bx bx-link"></i></a>
+            <h5>Video Player</h5>
+            <p>
+              Watch a movie, change the volume and the speed, skip 10 or 25
+              seconds
+            </p>
+            <a
+              href="https://marvelous-lokum-3e2ae7.netlify.app/"
+              target="_blank"
+              ><i class="bx bx-link" title="Video Player Link"></i
+            ></a>
           </div>
         </div>
 
         <div class="row">
-          <img src="images/Сочинение-на-тему-Природа.jpeg" alt="" />
+          <img src="images/drum-kit-prj.png" alt="Drum Kit" />
           <div class="layer">
-            <h5>Visual Design</h5>
-            <p>Lorem ipsum</p>
-            <a href="#"><i class="bx bx-link"></i></a>
+            <h5>Drum Kit</h5>
+            <p>
+              Play the drums using your keyboard. Press the key displayed on the
+              screen on your keyboard and get the drum sound
+            </p>
+            <a
+              href="https://chipper-croissant-29fdee.netlify.app/"
+              target="_blank"
+              ><i class="bx bx-link" title="Drum Kit Link"></i
+            ></a>
           </div>
         </div>
       </div>
 
       <div class="portfolio-button">
-        <a class="btn" href="projects.html">Check out for more...</a>
+        <a class="btn" href="projects.html" title="Check out for more projects"
+          >Check out for more...</a
+        >
       </div>
     </section>
 
@@ -164,21 +211,21 @@
           <h2>You have a new project</h2>
           <h4>Contact me now and get a 30% discount on your new project</h4>
 
-          <a href="contact.html" class="btn"
-            >Contact Me <i class="bx bx-send"></i
+          <a href="contact.html" class="btn" title="Contact Me"
+            >Contact Me <i class="bx bx-send" title="Send"></i
           ></a>
 
           <div class="contact-icons">
             <a href="https://www.facebook.com/inna.slota" target="_blank"
-              ><i class="bx bxl-facebook-circle"></i
+              ><i class="bx bxl-facebook-circle" title="Facebook"></i
             ></a>
             <a
               href="https://www.linkedin.com/in/inna-slota-546900160/"
               target="_blank"
-              ><i class="bx bxl-linkedin-square"></i
+              ><i class="bx bxl-linkedin-square" title="LinkedIn"></i
             ></a>
             <a href="https://github.com/innaslota" target="_blank"
-              ><i class="bx bxl-github"></i
+              ><i class="bx bxl-github" title="Github"></i
             ></a>
           </div>
         </div>
@@ -196,7 +243,7 @@
       </div>
 
       <div class="top">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#home"><i class="bx bx-up-arrow-alt" title="Go up"></i></a>
       </div>
     </section>
 
